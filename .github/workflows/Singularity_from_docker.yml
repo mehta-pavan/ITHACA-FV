@@ -19,7 +19,7 @@ jobs:
            singularity-version: 3.8.3
         
       - name: Singularity build
-        run: singularity build singularity_image.sif docker://ithacafv/ithacafv:manifest-latest
+        run: singularity build singularity_image.sif  docker://ithacafv/ithacafv:manifest-amd64  #docker://ithacafv/ithacafv:manifest-latest
         
       - name: copying necessary files
         run: |
